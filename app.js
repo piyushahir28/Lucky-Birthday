@@ -49,6 +49,5 @@ function clickHandler() {
         heIsNotLucky();
 }
 
-
 privacy.addEventListener("click", hidePrivacyPolicy);
 check.addEventListener("click", clickHandler);
