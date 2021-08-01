@@ -4,3 +4,13 @@ body {
     margin-top: 2rem;
     box-sizing: border-box;
 }
+
+.main {
+    margin: 1rem;
+    background-color: wheat;
+    border-radius: 20px;
+}
+
+.main-display {
+    display: flex;
+}
