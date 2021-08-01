@@ -19,7 +19,16 @@ function heIsNotLucky() {}
 
 function calSum(dob) {}
 
-function clickHandler() {}
+function clickHandler() {
+    dob = birthDate.value;
+    var sum = calSum(dob);
+    var number = luckyNumber.value;
+    var luckyOrNot = sum % number;
+    if (luckyOrNot == 0)
+        heIsLucky();
+    else
+        heIsNotLucky();
+}
 
 
 privacy.addEventListener("click", hidePrivacyPolicy);
