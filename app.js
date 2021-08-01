@@ -8,3 +8,9 @@ var smallOptDiv = document.querySelector(".output")
 var imgSad = document.querySelector("#img-sad");
 var imgHappy = document.querySelector("#img-happy");
 var imgCake = document.querySelector("#img-cake");
+
+function hidePrivacyPolicy() {
+    privacyNotice.style.display = "none"
+}
+
+privacy.addEventListener("click", hidePrivacyPolicy);
