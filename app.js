@@ -13,4 +13,14 @@ function hidePrivacyPolicy() {
     privacyNotice.style.display = "none"
 }
 
+function heIsLucky() {}
+
+function heIsNotLucky() {}
+
+function calSum(dob) {}
+
+function clickHandler() {}
+
+
 privacy.addEventListener("click", hidePrivacyPolicy);
+check.addEventListener("click", clickHandler);
