@@ -13,9 +13,21 @@ function hidePrivacyPolicy() {
     privacyNotice.style.display = "none"
 }
 
-function heIsLucky() {}
+function heIsLucky() {
+    smallOpt.innerHTML = "Yay! Your birthday is lucky 🤩";
+    smallOptDiv.style.display = "block";
+    imgCake.style.display = "none";
+    imgSad.style.display = "none";
+    imgHappy.style.display = "block";
+}
 
-function heIsNotLucky() {}
+function heIsNotLucky() {
+    smallOpt.innerHTML = "Oops! Your birthday is not lucky 🤐";
+    smallOptDiv.style.display = "block";
+    imgCake.style.display = "none";
+    imgHappy.style.display = "none";
+    imgSad.style.display = "block";
+}
 
 function calSum(dob) {
     var newDate = dob.replaceAll("-", "");
