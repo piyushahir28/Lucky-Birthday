@@ -17,7 +17,14 @@ function heIsLucky() {}
 
 function heIsNotLucky() {}
 
-function calSum(dob) {}
+function calSum(dob) {
+    var newDate = dob.replaceAll("-", "");
+    var sum = 0;
+    for (var i = 0; i < newDate.length; i++) {
+        sum += Number(newDate.charAt(i));
+    }
+    return sum;
+}
 
 function clickHandler() {
     dob = birthDate.value;
