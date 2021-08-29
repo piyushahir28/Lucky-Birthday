@@ -40,13 +40,18 @@ function calSum(dob) {
 
 function clickHandler() {
     dob = birthDate.value;
-    var sum = calSum(dob);
-    var number = luckyNumber.value;
-    var luckyOrNot = sum % number;
-    if (luckyOrNot == 0)
-        heIsLucky();
-    else
-        heIsNotLucky();
+    if (dob && luckyNumber.value) {
+        var sum = calSum(dob);
+        var number = luckyNumber.value;
+        var luckyOrNot = sum % number;
+        if (luckyOrNot == 0)
+            heIsLucky();
+        else
+            heIsNotLucky();
+    } else {
+        smallOpt.innerHTML = "Please enter some valid values";
+        smallOptDiv.style.display = "block";
+    }
 }
 
 privacy.addEventListener("click", hidePrivacyPolicy);
